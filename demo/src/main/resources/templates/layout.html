@@ -30,7 +30,7 @@
           <button class="btn btn-outline-primary" type="submit"> Log out</button>
             </form>
           </li>
-          <li sec:authorize="isAuthenticated()">
+          <li sec:authorize="!isAuthenticated()">
             <a href="/login" class="btn btn-outline-primary">Login</a>
           </li>
         </ul>
