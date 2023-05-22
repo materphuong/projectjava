@@ -33,6 +33,7 @@ public class BookController {
         bookService.addBook(book);
         return "redirect:/books";
     }
+    
     @GetMapping("/edit/{id}")
     public String editBookForm(@PathVariable("id") Long id, Model model) {
         Book book = bookService.getBookById(id);
