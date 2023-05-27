@@ -10,5 +10,6 @@ public class ValidCategoryIdValidator implements ConstraintValidator<ValidCatego
     @Override
     public boolean isValid(Category category, ConstraintValidatorContext context) {
         return category != null && category.getId() != null;
+
     }
 }
